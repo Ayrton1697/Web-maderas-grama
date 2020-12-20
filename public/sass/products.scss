@@ -1,0 +1,161 @@
+.products{
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    &__card{
+        position: relative;
+        flex: 0 0 30%;
+        border: 5px solid white;
+        height: 40rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        &--1{
+            background: url(../images/Productos/MADERA-MACIZA-2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--2{
+            background: url(../images/Productos/CHAPA-DE-MADERA-1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--3{
+            background: url(../images/Productos/PISO-DE-MADERA-3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--4{
+            background: url(../images/Productos/DECK-DE-MADERA-3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--5{
+            background: url(../images/Productos/ESCALERA-DE-MADERA-3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--6{
+            background: url(../images/Productos/PERGOLA-1.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--7{
+            background: url(../images/Productos/REVESTIMIENTO-2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--8{
+            background: url(../images/Productos/PISO-MELAMINICO-2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--9{
+            background: url(../images/Productos/ZOCALO-3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+      
+
+        
+        &:hover{
+
+            &::after{
+                width: 100%;
+                background-color: #93cc93b5;
+            }
+                 
+            & > .products__text{
+                animation: appear .7s cubic-bezier(0,.98,.25,1);
+                animation-fill-mode: forwards;
+            
+        
+            }
+
+            @include respond(phone){
+                &::after{
+                    width: 0%;
+                }
+                     
+                & > .products__text{
+                    animation: none;
+            
+                }
+            }
+         
+         
+
+        }
+        &::after{
+            content: "";
+            width: 0%;
+            height: 100%;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            background-color: rgba(132, 201, 155, 0.651);
+            transition: all .6s;
+        }
+
+        @include respond(phone){
+            flex: 0 0 90%;
+            height: 50vh;
+        }
+    }
+    &__text{
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: white;
+        font-weight: 200;
+        position: absolute;
+        z-index: 10;
+        top: -150%;
+        left: 0%;
+        background-image: linear-gradient(120deg, #7def907a, #34825475 50%);
+        background-size: 0%;
+        transition: all .6s;
+        
+        @include respond(phone){
+            font-size: 6rem;
+            top: 0%;
+        }
+       
+    }
+
+    &__link{
+        &,&:visited{
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+}
+
+@keyframes appear{
+
+    0%{
+        top: -150%;
+      
+      
+        }
+
+ 
+    100%{
+         top: 0%;
+       
+       
+    }
+
+}

@@ -1,0 +1,47 @@
+@font-face{
+    src: url(../fonts/Myriad-Pro-Bold.ttf);
+    font-family: 'Myriad';
+    font-weight: 500;
+}
+@font-face{
+    src: url(../fonts/Myriad-Pro-Regular.ttf);
+    font-family: 'Myriad';
+    font-weight: 300;
+}
+@font-face{
+    src: url(../fonts/MyriadPro-Light.woff);
+    font-family: 'Myriad';
+    font-weight: 200;
+}
+
+:root{
+
+    --swiper-theme-color: rgb(92, 167, 102) !important;
+}
+*,*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Myriad';
+}
+html{
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none; 
+    
+    @include respond(tab-land){
+        font-size: 56.25%; //Si queres que sea de 8px en tablets-land, haces 8px/16px=50%
+    }
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+    @include respond(phone){
+        font-size: 30%;
+    }
+    @include respond(big-desktop){
+        font-size: 75%;
+    }
+    
+}

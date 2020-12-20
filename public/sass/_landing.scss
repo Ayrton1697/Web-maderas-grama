@@ -1,0 +1,213 @@
+
+.landing-main{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+ 
+ @include respond(tab-port){
+    flex-direction: column;
+ }
+  
+    .main{
+        transition: all .9s ease-out;
+    
+        &-muebles{
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(122, 182, 85, .24), white),url(../images/silla-madera.jpg);
+            background-position: center;
+            background-size: cover;
+            transition: all .4s ease-out;
+            overflow: hidden;
+
+            @include respond(phone){
+                       
+                & > .main-mensaje-muebles{
+                    display:block !important;
+                }
+                
+                & > .btn-muebles{
+                    animation: moveUp .4s;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+            &:hover{
+                width: 70%;
+                background: linear-gradient(to bottom, rgba(213, 224, 205, 0.24),#83d586),url(../images/silla-madera.jpg);
+                background-position: center;
+                background-size: cover;
+              
+                
+                & > .main-mensaje-muebles{
+                    display:block !important;
+                }
+                
+                & > .btn-muebles{
+                    animation: moveUp .4s;
+                    animation-fill-mode: forwards;
+                }
+    
+            }
+
+        @include respond(tab-port){
+            width: 100%;
+
+            &:hover{
+                width: 100%;
+                background: linear-gradient(to bottom, rgba(213, 224, 205, 0.24),#83d586),url(../images/silla-madera.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+         }
+          
+        }
+        &-maderas{
+            position: relative;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(122, 182, 85, .54),$color-green),url(../images/piso-madera.jpg);
+            background-position: center;
+            background-size: cover;
+            transition: all .3s;
+
+            @include respond(phone){
+                   
+                & > .main-mensaje{
+                    display:block !important;
+                }
+                
+                & > .btn-maderas{
+                    animation: moveUp .4s;
+                    animation-fill-mode: forwards;
+                }
+            }
+            
+            &:hover{
+                width: 70%;
+                background: linear-gradient(to bottom, rgba(95, 141, 68, 0.54), #4d9d4d),url(../images/piso-madera.jpg);
+                background-position: center;
+                background-size: cover;
+            
+                & > .main-mensaje{
+                    display:block !important;
+                }
+                
+                & > .btn-maderas{
+                    animation: moveUp .4s;
+                    animation-fill-mode: forwards;
+                }
+            }
+
+                @include respond(tab-port){
+                    width: 100%;
+
+                    &:hover{
+                        width: 100%;
+                        background: linear-gradient(to bottom, rgba(95, 141, 68, 0.54), #4d9d4d),url(../images/piso-madera.jpg);
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+      
+        }
+        &-mensaje{
+            width: max-content;
+            color: white;
+            display: none;
+            text-transform: uppercase;
+            font-size: 1.7rem;
+            position: absolute;
+            top: 90%;
+            animation: enterLeft 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation-fill-mode: forwards;
+            transform: translateX(-50%);
+
+            &-muebles{
+                transform: translateX(50%);
+                color: green;
+                animation: enterRight 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+                animation-fill-mode: forwards;
+
+               
+            }
+
+         
+            
+        }
+  
+    }
+
+  
+    
+}
+.section-main2{
+
+        position: relative;
+  
+
+    .main2{
+
+        position: absolute;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        overflow-x: hidden;
+
+        &-muebles2{
+
+        
+            background: url(../images/muebles-verde.jpeg);
+            background-position: center;
+            background-attachment: fixed;
+         
+        }
+        &-maderas2{
+
+        
+         
+            background: url(../images/grama-blanco.jpeg);
+            background-position: center;
+            background-attachment: fixed;
+        
+        }
+
+}
+
+}
+
+@keyframes enterLeft{
+
+  
+    0%{left: -50%;}
+
+    100%{ left: 50%;}
+
+ 
+
+}
+@keyframes enterRight{
+
+  
+    0%{right: -50%;}
+    100%{ right: 50%;}
+
+}
+
+@keyframes moveUp{
+    0%{top: 150%;}
+    100%{ top: 77%;}
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40rem;
+}

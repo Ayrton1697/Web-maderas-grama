@@ -1,0 +1,55 @@
+.heading--primary{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $color-green;
+    font-weight: 300;
+
+    &--home{
+        font-size: 2.5rem;
+       color: $color-green;
+       font-weight: 300;
+       text-transform: initial;
+
+       @include respond(tab-port){
+        font-size: 4.5rem;
+    }
+    }
+  
+}
+.heading--secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: $color-green;
+    font-weight: 300;
+
+    &--info{
+        border-bottom: 1px solid $color-green;
+        padding: 3rem;
+        font-weight: 200;
+    }
+
+}
+.heading--swiper{
+    font-size: 10rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 200;
+
+    @include respond(phone){
+        width: min-content;
+    }
+}
+.heading--sub{
+    font-size: 3rem;
+    color: white;
+    font-weight: 200;
+}
+.heading--intersection{
+    font-size: 5rem;
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 200;
+    text-shadow: 0rem 4rem 3rem black;
+    width: max-content;
+    text-align: center;
+}

@@ -1,0 +1,65 @@
+
+.form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10rem;
+        margin-top: -5rem;
+        box-shadow: 0rem 3rem 4rem rgba(126, 125, 125, 0.089),
+                    0rem 0rem 4rem rgba(126, 125, 125, 0.089);;
+       font-family: inherit;
+       -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%,0 100%);
+       clip-path: polygon(0 0, 100% 20%, 100% 100%,0 100%);
+       background-color: $color-green;
+
+       @include respond(phone){
+        -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%,0 100%);
+        clip-path: polygon(0 0, 100% 10%, 100% 100%,0 100%);
+       }
+    
+
+    &__input{
+        font-family: inherit;
+        font-size: 1.5rem;
+        font-weight: 200;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        box-shadow: 0rem 3rem 4rem rgba(126, 125, 125, 0.089);
+        padding: 2rem;
+        width: 50%;
+        margin: 4rem;
+        transition: all .4s;
+
+        &:focus{
+            border-bottom:1px solid rgb(63, 160, 103);
+        }
+
+        @include respond(phone){
+            width: 90%;
+            font-size: 3rem;
+        }
+    }
+    &__textarea{
+        font-family: inherit;
+        font-size: 1.5rem;
+        font-weight: 200;
+        border-radius: 5px;
+        width: 50%;
+        outline: none;
+        border: none;
+        padding: 2rem;
+        margin: 4rem;
+        box-shadow: 0rem 3rem 4rem rgba(139, 139, 139, 0.212);
+
+        &:focus{
+            border-bottom:1px solid rgb(63, 160, 103);
+        }
+        @include respond(phone){
+            width: 90%;
+            font-size: 3rem;
+        }
+    }
+}

@@ -1,0 +1,229 @@
+.section-info-main{
+    overflow: hidden;
+    
+}
+.section--header{
+    padding: 15rem;
+
+    &--pisos-madera{
+        background: url(../images/Productos/PISOS-DE-MADERA-2.png);
+        background-position: bottom;
+        background-size: cover;
+    
+    }
+    &--pergolas{
+        background: url(../images/Productos/PERGOLA-2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    &--decks{
+        background: url(../images/Productos/DECK-DE-MADERA-6.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    &--revestimientos{
+        background: url(../images/Productos/REVESTIMIENTO-3.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    &--maderas{
+        background: url(../images/Productos/MADERA-MACIZA-2.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    &--escaleras{
+        background: url(../images/Productos/ESCALERA-DE-MADERA-4.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    &--zocalos{
+        background: url(../images/Productos/ZOCALO-4.jpg);
+        background-position: bottom;
+        background-size: cover;
+       
+    }
+    &--pisos-melaminicos{
+        background: url(../images/Productos/PISO-MELAMINICO-5.jpg);
+        background-position: center;
+        background-size: cover;
+    
+    }
+    &--chapa-de-madera{
+        background: url(../images/Productos/CHAPA-DE-MADERA-2.jpg);
+        background-position: bottom;
+        background-size: cover;
+    
+    }
+}
+.section-info{
+    padding: 10rem 10rem 0rem 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+ 
+    // &:before{
+    //     content: '';
+    //     width: 1500px;
+    //     height: 1500px;
+    //     border-radius: 100%;
+    //     top: 0%;
+    //     left: -40%;
+    //     position: absolute;
+    //     background: $color-green;
+    //     z-index: -1;
+    //     overflow: hidden;
+      
+    // }
+   
+}
+.info{
+    padding: 8rem;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 40rem;
+    overflow: hidden;
+    color: rgb(27, 107, 27);
+
+    @include respond(phone){
+        flex-direction: column;
+    }
+ 
+
+    &__text{
+        flex: 0 0 50%;
+        font-size: 2.2rem;
+        font-weight: 200;
+   
+        
+        @include respond(phone){
+
+            flex: 0 0 100%;
+            display: block;
+            font-size: 3.2rem;
+            margin-bottom: 10rem;
+        }
+        
+    }
+    &__photo{
+        flex: 0 0 40%;
+        position: relative;
+        
+
+     
+     @include respond(phone){
+
+            flex: 0 0 86%;
+            position: relative;
+            height: 60rem;
+            padding: 15rem;
+            }
+     }
+    
+
+    &__list{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        flex-wrap: wrap;
+        }
+
+    &__item{
+
+        font-weight: 300;
+        color:  #72b283;
+        margin: 2rem .5rem;
+        flex: 0 0 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--picture{
+            width: 60%;
+            height: 100%;
+            box-shadow: 0rem 3rem 4rem rgba(75, 74, 74, 0.164);
+            margin-bottom: 1rem;
+            transition: all .4s;
+
+            &:hover{
+                transform: scale(1.1) translateY(-1rem);
+                box-shadow: 0rem 3rem 4rem rgba(75, 74, 74, 0.295);
+            }
+        }
+
+        @include respond(phone){
+                flex: 0 0 90%;
+                font-weight: 200;
+        }
+    }
+}
+
+.tipos__madera{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid green;
+}
+
+.composition{
+
+
+    &__picture{
+        width: 60%;
+        transition: all .4s;
+        box-shadow: 0rem 4rem 3rem rgba(122, 122, 122, 0.247);
+        transition: all .4s;
+        max-height: 25rem;
+        padding: 1rem;
+        margin-bottom: -1rem;
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 0rem 4rem 3rem rgba(122, 122, 122, 0.658);
+        }
+
+        &--1{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        &--2{
+            position: absolute;
+            top: 15%;
+            right: 10%;
+        }
+        &--3{
+            position: absolute;
+            top: 5%;
+            right: 0;
+        }
+        &--4{
+            position: absolute;
+            top: 20%;
+            left: -10%;
+        }
+
+        &:hover{
+            z-index: 1;
+        }
+    }
+}
+
+
+.cotizacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+}

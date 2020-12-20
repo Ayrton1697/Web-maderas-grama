@@ -1,0 +1,75 @@
+.section-main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $color-white;
+    padding: 0rem 0rem;
+}
+.section-about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 0rem 0rem 0rem;
+    
+}
+.section-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 0rem;
+}
+.section-clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 0rem;
+    
+}
+.section-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10rem 0rem;
+    
+}
+.section-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.section-intersection{
+   
+ 
+    padding: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: max-content;
+    width: 100%;
+
+    &--1{
+        background: url(../images/Productos/PISOS-DE-MADERA-2.png);
+        background-attachment: fixed;
+
+        @include respond(phone){
+            background-attachment: scroll;
+        }
+    }
+    &--2{
+        background: url(../images/Productos/PISO-MELAMINICO-5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+
+        @include respond(phone){
+            background-attachment: scroll;
+        }
+    }
+}
+

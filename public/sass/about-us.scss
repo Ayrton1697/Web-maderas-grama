@@ -1,0 +1,62 @@
+.about-us{
+
+    padding: 0rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include respond(tab-port){
+        flex-direction: column;
+    }
+    &__text{
+
+        flex: 0 0 50%;
+        font-size: 2.2rem;
+        font-weight: 200;
+
+        @include respond(phone){
+            font-size: 3rem;
+        }
+        
+    }
+    &__picture{
+        flex: 0 0 40%;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &__photo{
+        width: 100%;
+        border: 1px solid $color-green;
+        box-shadow: 0rem 2rem 4rem rgba(22, 22, 22, 0.151);
+        transition: all .3s;
+
+        @include respond(tab-port){
+            width: 90%;
+            margin-top: 10rem;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+            outline: 5px solid $color-green;
+            z-index: 20;
+        }
+       
+        // &--1{
+        //     width: 60%;
+        // }
+        &--2{
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 50%;
+
+           @include respond(tab-port){
+            top: 25%;
+           }
+        
+        }
+    }
+}

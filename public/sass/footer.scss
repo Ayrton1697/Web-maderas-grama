@@ -1,0 +1,77 @@
+.footer{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: white;
+    font-weight: 300;
+    padding: 10rem;
+    background-color: $color-green;
+
+&__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-top: 1px solid white;
+    padding: 4rem;
+    margin: 4rem;
+    flex-wrap: wrap;
+
+    @include respond(phone){
+        flex-wrap: wrap;
+    }
+
+}
+&__item{
+    font-size: 2rem;
+    padding: 0 3rem;
+    transition: all .3s;
+    &:hover{
+        transform: scale(1.1);
+        
+        & > .footer__link{
+            color: rgb(76, 134, 79);
+        }
+    }
+    
+        @include respond(phone){
+            font-size: 3rem;
+            padding: 2rem 5rem;
+        }
+}
+&__link{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: all .3s;
+  
+}
+
+&__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+
+    &--image{
+        width: 100%;
+      
+    }
+    @include respond(phone){
+        width: 70%;
+    }
+}
+&__socials{
+    
+    &-list{
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+}
+}

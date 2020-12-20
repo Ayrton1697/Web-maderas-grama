@@ -1,0 +1,21 @@
+.home--logo{
+    width: 5rem;
+    margin-left: 5rem;
+   
+}
+.grama__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s;
+    
+    @include respond(tab-port){
+        align-self: flex-start;
+    }
+
+
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
