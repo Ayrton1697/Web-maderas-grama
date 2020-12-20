@@ -1,34 +1,61 @@
 .tienda{
 
-    &--info{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+   
+
+    &__container{
+        padding: 3rem;
+        margin: 2rem auto;
+        width: 80%;
+        height: min-content;
         display: flex;
         justify-content: center;
         align-items: center;
-        background:linear-gradient(to bottom, #93de93,rgb(84, 165, 84));
-        height: 100vh;
+        flex-wrap: wrap;
+        background-color: orangered;
+        box-shadow: 0rem 1rem 5rem rgba(0, 0, 0, 0.308);
     }
-    &--warning{
-      
-            font-size: 5rem;
-            text-align: center;
-            color:white;
-            font-weight: 200;
-            transition: all .4s;
-            animation: float 3s infinite;
     
-    }
 }
-@keyframes float {
-	0% {
-		text-shadow: 5px 15px 20px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
-	50% {
-		text-shadow: 25px 15px 20px rgba(0,0,0,0.2);
-		transform: translatey(-20px);
-	}
-	100% {
-		text-shadow: 5px 15px 20px rgba(0,0,0,0.6);
-		transform: translatey(0px);
-	}
+.product{
+
+        height: 40rem;
+        width: 30rem;
+        border: 1px solid white;
+        margin: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+    &__title{
+        
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+    &__img{
+        height: 25rem;
+        border: 1px solid white;
+        margin-bottom: 1rem;
+    }
+    &__info{
+
+        font-size: 1.2rem;
+        text-align: center;
+         padding: 1rem;
+    }
+    &__cta{
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__price{
+        font-size: 2.5rem;
+    }
+    &__add{
+        margin: 1rem;
+    }
 }

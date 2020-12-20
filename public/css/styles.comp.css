@@ -1130,28 +1130,13 @@ html {
         width: 90%;
         font-size: 3rem; } }
 
-.tienda--info {
+.tienda {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, #93de93, #54a554);
-  height: 100vh; }
-
-.tienda--warning {
-  font-size: 5rem;
-  text-align: center;
-  color: white;
-  font-weight: 200;
-  transition: all .4s;
-  animation: float 3s infinite; }
-
-@keyframes float {
-  0% {
-    text-shadow: 5px 15px 20px rgba(0, 0, 0, 0.6);
-    transform: translatey(0px); }
-  50% {
-    text-shadow: 25px 15px 20px rgba(0, 0, 0, 0.2);
-    transform: translatey(-20px); }
-  100% {
-    text-shadow: 5px 15px 20px rgba(0, 0, 0, 0.6);
-    transform: translatey(0px); } }
+  padding: 30rem; }
+  .tienda__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered; }
